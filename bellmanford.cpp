@@ -4,14 +4,13 @@
 
 using namespace std;
 
-struct edge
-{
-    int a, b;
-    double w;
-};
-
 class BellmanFord
 {
+    struct edge
+    {
+        int a, b;
+        double w;
+    };
     int n;
     vector<edge> edges;
     vector<double> d;
